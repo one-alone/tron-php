@@ -1,0 +1,20 @@
+{
+    "name": "tronmain/tron-php",
+    "description": "A set of writing is compatible with TRX currency and all TRC series tokens in the TRON network",
+    "type": "1",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "php": ">=7.1",
+        "kornrunner/secp256k1": "^0.1.2",
+        "sc0vu/web3.php": "^0.1.4",
+        "simplito/elliptic-php": "^1.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mr quan",
+            "email": "903838379@qq.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
