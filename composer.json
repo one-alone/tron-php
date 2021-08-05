@@ -3,6 +3,7 @@
     "description": "A set of writing is compatible with TRX currency and all TRC series tokens in the TRON network",
     "type": "1",
     "homepage": "https://github.com/one-alone/tron-php.git",
+    "keywords": ["tron","tron.php","php-tron"],
     "require": {
         "guzzlehttp/guzzle": "^6.3",
         "php": ">=7.1",
