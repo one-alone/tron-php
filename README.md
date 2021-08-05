@@ -22,12 +22,5 @@
 
 
 
-## Contact me
-- For more source code, please contact
-```
- wechat: ixinjiei
-```
-- Help
-```
-http://sc.hubwiz.com/codebag/tron-php-lib/
+
 ```

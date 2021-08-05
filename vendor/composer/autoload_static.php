@@ -31,6 +31,10 @@ class ComposerStaticInit03e07d4f932411cd4750ac3f8a9036dd
         array (
             'Web3\\' => 5,
         ),
+        'T' => 
+        array (
+            'TronTool\\' => 9,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Php72\\' => 23,
@@ -80,6 +84,10 @@ class ComposerStaticInit03e07d4f932411cd4750ac3f8a9036dd
         'Web3\\' => 
         array (
             0 => __DIR__ . '/..' . '/sc0vu/web3.php/src',
+        ),
+        'TronTool\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/tronphp/src',
         ),
         'Symfony\\Polyfill\\Php72\\' => 
         array (

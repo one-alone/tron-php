@@ -9,6 +9,7 @@ return array(
     'phpseclib\\' => array($vendorDir . '/phpseclib/phpseclib/phpseclib'),
     'kornrunner\\' => array($vendorDir . '/kornrunner/keccak/src', $vendorDir . '/kornrunner/secp256k1/src'),
     'Web3\\' => array($vendorDir . '/sc0vu/web3.php/src'),
+    'TronTool\\' => array($baseDir . '/tronphp/src'),
     'Symfony\\Polyfill\\Php72\\' => array($vendorDir . '/symfony/polyfill-php72'),
     'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
     'Symfony\\Polyfill\\Intl\\Normalizer\\' => array($vendorDir . '/symfony/polyfill-intl-normalizer'),
