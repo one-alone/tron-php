@@ -3,6 +3,7 @@
 namespace TronTool;
 
 use InvalidArgumentException;
+use Web3\Contracts\Types\Address;
 use Web3\Utils;
 use Web3\Contracts\Ethabi;
 use Web3\Contracts\Types\Address as EthAddress;
@@ -150,7 +151,10 @@ class Contract
 
     function send () {
         if (is_null($this->credential)) {
-            throw new \Exception('Sender credential not set.');
+            return (object)[
+                'tx' => '',
+                'result' => 'Sender credential not set.'
+            ];
         }
 
         if (isset($this->functions)) {
@@ -164,6 +168,7 @@ class Contract
 
             if (count($arguments) < count($function['inputs'])) {
                 throw new InvalidArgumentException('Please make sure you have put all function params and callback.');
+
             }
 
             $params = array_splice($arguments, 0, count($function['inputs']));
@@ -198,7 +203,10 @@ class Contract
             );
             //var_dump($ret);
             if ($ret->result->result == false) {
-                throw new Exception('Error build contract transaction.');
+                return (object)[
+                    'tx' => '',
+                    'result' => 'Error build contract transaction.'
+                ];
             }
             $signedTx = $this->credential->signTx($ret->transaction);
             //var_dump($signedTx);
