@@ -3,7 +3,6 @@
 namespace TronTool;
 
 use InvalidArgumentException;
-use Web3\Contracts\Types\Address;
 use Web3\Utils;
 use Web3\Contracts\Ethabi;
 use Web3\Contracts\Types\Address as EthAddress;
