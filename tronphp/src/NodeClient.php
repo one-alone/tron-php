@@ -30,6 +30,7 @@ class NodeClient
     {
         $opts = [
             'json' => $payload,
+            'timeout' => 10
         ];
         $rsp  = $this->client->post($api, $opts);
 
@@ -40,6 +41,7 @@ class NodeClient
     {
         $opts = [
             'query' => $query,
+            'timeout' => 10
         ];
         $rsp  = $this->client->get($api, $opts);
 
